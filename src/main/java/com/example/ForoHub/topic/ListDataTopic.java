@@ -1,11 +1,7 @@
 package com.example.ForoHub.topic;
 
-import org.springframework.cglib.core.Local;
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
 public record ListDataTopic(
+        Long id,
         String title,
         String message,
         String dateCreation,
@@ -14,6 +10,6 @@ public record ListDataTopic(
         String course
 ) {
     public ListDataTopic(Topic topic){
-        this(topic.getTitle(), topic.getMessage(), topic.getDateCreation().toString(), topic.getStatus().toString(),topic.getAuthor(), topic.getCourse());
+        this(topic.getId(), topic.getTitle(), topic.getMessage(), topic.getDateCreation().toString(), topic.getStatus().toString(),topic.getAuthor(), topic.getCourse());
     }
 }

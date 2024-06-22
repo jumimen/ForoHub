@@ -37,4 +37,23 @@ public class Topic {
     }
 
 
+    public void dataUpdateTopic(UpdateDataTopic updateDataTopic) {
+        if(updateDataTopic.title() != null){
+            this.title = updateDataTopic.title();
+            this.status = Status.UPDATED;
+        }
+        if(updateDataTopic.message() != null){
+            this.message = updateDataTopic.message();
+            this.status = Status.UPDATED;
+        }
+        if(updateDataTopic.author() != null){
+            this.author = updateDataTopic.author();
+            this.status = Status.UPDATED;
+        }
+        if(updateDataTopic.course() != null){
+            this.course = updateDataTopic.course();
+            this.status = Status.UPDATED;
+        }
+        this.dateCreation = LocalDateTime.now();
+    }
 }
