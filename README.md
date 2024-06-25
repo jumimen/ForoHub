@@ -26,7 +26,7 @@ La aplicación ofrece las siguientes características:
 -Denegar listado de topicos sin token
 ![Caracteristicas](imagenes/Denegacion.jpg)
 -  Listado exitoso con token.
-![Caracteristicas](imagenes/Listartopicos.jpg)
+![Caracteristicas](imagenes/ListarTopicos.jpg)
 -Registrar un nuevo topico
 ![Caracteristicas](imagenes/RegistroExitoso.jpg)
 -Denegar actualizar sin token.
