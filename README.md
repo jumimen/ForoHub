@@ -21,6 +21,8 @@ El proyecto es funcional respecto a la tabla topicos, pero el foro tiene una bas
 ## Características de la aplicación y demostración
 
 La aplicación ofrece las siguientes características:
+Autenticación y autorizacion
+!(imagenes/login.jpg)
   
   
 ## Tecnologías utilizadas
