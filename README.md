@@ -21,10 +21,25 @@ El proyecto es funcional respecto a la tabla topicos, pero el foro tiene una bas
 ## Características de la aplicación y demostración
 
 La aplicación ofrece las siguientes características:
-Autenticación y autorizacion
-!(imagenes/login.jpg)
-  
-  
+-Autenticación y autorizacion
+![Caracteristicas](imagenes/login.jpg)
+-Denegar listado de topicos sin token
+![Caracteristicas](imagenes/Denegacion.jpg)
+-  Listado exitoso con token.
+![Caracteristicas](imagenes/Listartopicos.jpg)
+-Registrar un nuevo topico
+![Caracteristicas](imagenes/RegistroExitoso.jpg)
+-Denegar actualizar sin token.
+![Caracteristicas](imagenes/DenegarPutSinToken.jpg)
+-Actualización exitosa con token
+![Caracteristicas](imagenes/CuerpoPut.jpg)
+![Caracteristicas](imagenes/PutExitoso.jpg)
+-Listar topico por id.
+![Caracteristicas](imagenes/ListarPorId.jpg)
+-Borrar topicos por id
+![Caracteristicas](imagenes/borradoExitosa.jpg)
+![Caracteristicas](imagenes/listadoSinRegistroBorrado.jpg)
+ 
 ## Tecnologías utilizadas
 
 El proyecto utiliza las siguientes tecnologías:
