@@ -1,6 +1,8 @@
 package com.example.ForoHub.controller;
 
 import com.example.ForoHub.domain.user.DataAuthenticationUser;
+import com.example.ForoHub.domain.user.User;
+import com.example.ForoHub.infra.security.DataJWTToken;
 import com.example.ForoHub.infra.security.TokenService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +26,9 @@ public class AuthenticationController {
     @PostMapping
     public ResponseEntity userAuthentication(@RequestBody @Valid DataAuthenticationUser dataAuthenticationUser){
         Authentication authenticationToken = new UsernamePasswordAuthenticationToken(dataAuthenticationUser.login(), dataAuthenticationUser.password());
-        authenticationManager.authenticate(authenticationToken);
-        var jwtToken = tokenService.toGenerateToken();
-        return  ResponseEntity.ok(jwtToken);
+        var userAuthenticated =  authenticationManager.authenticate(authenticationToken);
+        var jwtToken = tokenService.toGenerateToken((User)userAuthenticated.getPrincipal());
+        return  ResponseEntity.ok(new DataJWTToken(jwtToken));
     }
         
 }
